@@ -105,17 +105,20 @@ nav {
 .dropdown-content a:hover {
   font-weight: 700;
 }
-/* THIS MAKES THE DROPDOWN VISIBLE ON HOVER OF THE DROPDOWN WRAPPER WHICH ESSENTIALLY IS THE PARENT OF THE DROPDOWN BUTTON AND THE DROPDOWN CONTENT */
-.dropdown:hover .dropdown-content {
+
+/* THIS MAKES THE DROPDOWN VISIBLE ON HOVER OF THE DROPDOWN WRAPPER WHICH ESSENTIALLY IS THE PARENT OF THE DROPDOWN BUTTON AND THE DROPDOWN CONTENT
+THERE'S ACTUALLY A LITTLE BIT OF A TRICK DONE HERE, WHICH IS TO USE ANOTHER CLASS FOR THE HOVER STATE ON DESKTOP AND THIS
+WAS REMOVED LATER ON WITH JAVASCRIPT WHILE ON MOBILE VERSION AS IT INTEFERES WITH THE WAY THESE CONTENT DISPLAYS ON MOBILE */
+.dropdown-desktop:hover .dropdown-content {
   /* opacity: 1;
   pointer-events: auto;
   visibility: visible; */
   display: block;
 }
-/* .dropdown:hover img {
+.dropdown-desktop:hover img {
   transform: rotate(180deg);
   transition: all 0.5s;
-} */
+}
 /* .visible {
   opacity: 1;
   pointer-events: auto;
