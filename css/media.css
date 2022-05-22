@@ -15,7 +15,7 @@
 @media (max-width: 420px) {
   body,
   html {
-    overflow: hidden;
+    overflow-x: hidden;
   }
   header {
     padding: 3rem 2rem 15rem 2rem;
